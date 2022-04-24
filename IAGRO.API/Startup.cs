@@ -28,7 +28,7 @@ namespace IAGRO.API
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Version = "v1",
-                    Title = "IAGRO",
+                    Title = "Teste time IAGRO - por Fabrizio Rodrigues",
                 });
             });
         }
