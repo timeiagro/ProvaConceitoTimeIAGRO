@@ -28,37 +28,37 @@ Segue o teste com os quesitos descritos contemplados a contento. Fiz de forma qu
 
 ## Ferramentas utilizadas:
 
-Visual Studio Community 2022;
-Target Framework .NET Core 3.1 LTS em todas as Class libraries e WebAPI;
-Swagger para apresentar a documentação da API.
+- Visual Studio Community 2022;
+- Target Framework .NET Core 3.1 LTS em todas as Class libraries e WebAPI;
+- Swagger para apresentar a documentação da API.
 
 ## Bibliotecas do NuGet que foram utilizadas:
 
-Swashbuckle.AspNetCore 6.3.1 (IAGRO.API);
-Swashbuckle.AspNetCore.Swagger 6.3.1 (IAGRO.API);
-Microsoft.Extensions.DependencyInjection.Abstractions 6.0.0 (IAGRO.Application);coverlet.collector 1.2.0 (IAGRO.Application.Tests);
-Microsoft.NET.Test.Sdk 16.5.0 (IAGRO.Application.Tests);
-xunit 2.4.0 (IAGRO.Application.Tests);
-xunit.runner.visualstudio 2.4.0 (IAGRO.Application.Tests).
+- Swashbuckle.AspNetCore 6.3.1 (IAGRO.API);
+- Swashbuckle.AspNetCore.Swagger 6.3.1 (IAGRO.API);
+- Microsoft.Extensions.DependencyInjection.Abstractions 6.0.0 (IAGRO.Application);coverlet.collector 1.2.0 (IAGRO.Application.Tests);
+- Microsoft.NET.Test.Sdk 16.5.0 (IAGRO.Application.Tests);
+- xunit 2.4.0 (IAGRO.Application.Tests);
+- xunit.runner.visualstudio 2.4.0 (IAGRO.Application.Tests).
 
 ## Objetivos alcançados:
 
-Criar uma API para buscar produtos no arquivo JSON disponibilizado - OK;
-Que seja possível buscar livros por suas especificações(autor, nome do livro ou outro atributo) - OK;
-É preciso que o resultado possa ser ordenado pelo preço.(asc e desc) - OK;
-Disponibilizar um método que calcule o valor do frete em 20% o valor do livro - OK;
-Esse cliente quer ler e buscar esse catálogo de um arquivo JSON, e esse arquivo não pode ser modificado - OK;
-Organização de código - OK;
-Manutenibilidade - OK;
-Princípios de orientação à objetos - OK;
-Padrões de projeto - OK;
-Teste unitário - OK;
-O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior - OK;
-Gostaríamos que fosse evitado a utilização de frameworks - OK;
+- Criar uma API para buscar produtos no arquivo JSON disponibilizado - **OK**;
+- Que seja possível buscar livros por suas especificações(autor, nome do livro ou outro atributo) - **OK**;
+- É preciso que o resultado possa ser ordenado pelo preço.(asc e desc) - **OK**;
+- Disponibilizar um método que calcule o valor do frete em 20% o valor do livro - **OK**;
+- Esse cliente quer ler e buscar esse catálogo de um arquivo JSON, e esse arquivo não pode ser modificado - **OK**;
+- Organização de código - **OK**;
+- Manutenibilidade - **OK**;
+- Princípios de orientação à objetos - **OK**;
+- Padrões de projeto - **OK**;
+- Teste unitário - **OK**;
+- O projeto deve ser desenvolvido em C#, utilizando o .NET Core 3.1 ou superior - **OK**;
+- Gostaríamos que fosse evitado a utilização de frameworks - **OK**.
 
 ## Para executar este projeto
 
-Instalar as bibliotecas do NuGet nas versões utilizadas ou superiores (pode ocorrer alguma incompatibilidade) já mencionadas;
-Fazer o Rebuild da solução;
-Para executar todos os testes, basta clicar com o botão direito sobre o projeto IAGRO.Application.Tests e selecionar a opção “Run Tests” e observar os resultados;
-Finalmente executar o projeto IAGRO.API e navegar pelas api’s pelo Swagger.
+1. Instalar as bibliotecas do NuGet nas versões utilizadas ou superiores (pode ocorrer alguma incompatibilidade) já mencionadas;
+2. Fazer o Rebuild da solução;
+3. Para executar todos os testes, basta clicar com o botão direito sobre o projeto IAGRO.Application.Tests e selecionar a opção “Run Tests” e observar os resultados;
+4. Finalmente executar o projeto IAGRO.API e navegar pelas api’s pelo Swagger.
