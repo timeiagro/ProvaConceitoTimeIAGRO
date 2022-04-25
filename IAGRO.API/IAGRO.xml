@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IAGRO.API</name>
+    </assembly>
+    <members>
+        <member name="M:IAGRO.API.Controllers.BooksController.GetAll">
+            <summary>
+            Retorna todos os produtos contidos no arquivo books.json.
+            </summary>
+            <returns>IEnumerable</returns>
+        </member>
+        <member name="M:IAGRO.API.Controllers.BooksController.GetByAuthor(System.String)">
+            <summary>
+            Retorna todos os produtos a partir do nome do autor.
+            </summary>
+            <param name="author">Nome do autor</param>
+            <returns>IEnumerable</returns>
+        </member>
+        <member name="M:IAGRO.API.Controllers.BooksController.GetByBooksName(System.String)">
+            <summary>
+            Retorna todos os produtos a partir do nome do livro.
+            </summary>
+            <param name="book">Nome do livro</param>
+            <returns></returns>
+        </member>
+        <member name="M:IAGRO.API.Controllers.BooksController.FindAnySpecification(System.String)">
+            <summary>
+            Retorna todos os produtos a partir de alguma especificação.
+            </summary>
+            <param name="term">Descrição de alguma especificação do produto (publicação, autor, ilustradores, gêneros)</param>
+            <returns>IEnumerable</returns>
+        </member>
+        <member name="M:IAGRO.API.Controllers.BooksController.GetShippingPrice(System.Nullable{System.Int32})">
+            <summary>
+            Retorna o valor do frete do produto, considerando 20% do seu valor.
+            </summary>
+            <param name="bookId">Código do produto</param>
+            <returns>decimal</returns>
+        </member>
+        <member name="M:IAGRO.API.Controllers.BooksController.OrderByPrice(System.String)">
+            <summary>
+            Ordena a listagem de produtos pelo seu preço.
+            </summary>
+            <param name="orderBy">Parâmetro de ordenação (somente 'asc' ou 'desc')</param>
+            <returns>IEnumerable</returns>
+        </member>
+    </members>
+</doc>
