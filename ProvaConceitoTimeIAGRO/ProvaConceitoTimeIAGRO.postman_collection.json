@@ -1,0 +1,1401 @@
+{
+	"info": {
+		"_postman_id": "c7c12ada-4b83-443b-b5ac-b7255c63bec2",
+		"name": "ProvaConceitoTimeIAGRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api/Book",
+			"item": [
+				{
+					"name": "Method Get All Order Asc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=asc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get All",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get All Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get id Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc",
+									"description": "string"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get name Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"name\": \"Fantastic\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get price Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"price\": 11\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get specifications originallyPublished Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"specifications\": {\n        \"originallyPublished\": \"November 18, 2016\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get specifications author Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"specifications\": {\n        \"originallyPublished\": \"November 18, 2016\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get specifications pageCount Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"specifications\": {\n        \"pageCount\": 457\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get specifications illustratort Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"specifications\": {\n        \"pageCount\": 457\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Get specifications genres Order Desc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"specifications\": {\n        \"genres\": \"Fantasy Fiction\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Book?order=desc",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book"
+							],
+							"query": [
+								{
+									"key": "order",
+									"value": "desc"
+								}
+							]
+						},
+						"description": "<br>\r\n             Example1: { }\r\n             \r\n<br>\r\n             Example2: { \"id\": 2}\r\n             \r\n<br>\r\n             Example3: { \"name\": \"Journey\" }\r\n             \r\n<br>\r\n             Example4: { \"price\": 10 }\r\n             \r\n<br>\r\n             Example5: { \"specifications\": { \"originallyPublished\": null } }\r\n             \r\n<br>\r\n             Example6: { \"specifications\": { \"author\": \"Jules Verne\" } }\r\n             \r\n<br>\r\n              Example7: { \"specifications\": { \"pageCount\": 183 } }\r\n             \r\n<br>\r\n              Example8: { \"specifications\": { \"illustrator\": \"Édouard Riou\" } }\r\n             \r\n<br>\r\n              Example9: { \"specifications\": { \"genres\": \"Adventure\" } }\r\n             "
+					},
+					"response": [
+						{
+							"name": "Created",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": 87459385,\n    \"name\": \"voluptate fugiat\",\n    \"price\": -55049533,\n    \"specifications\": {\n      \"originallyPublished\": \"sunt\",\n      \"author\": \"do proident\",\n      \"pageCount\": 4074957,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  },\n  {\n    \"id\": -44984804,\n    \"name\": \"sunt\",\n    \"price\": 84766638,\n    \"specifications\": {\n      \"originallyPublished\": \"Lorem esse\",\n      \"author\": \"qui aliquip adipisicing officia\",\n      \"pageCount\": -65465704,\n      \"illustrator\": {},\n      \"genres\": {}\n    }\n  }\n]"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 26024623,\n  \"name\": \"in officia labore\",\n  \"price\": -18953850,\n  \"specifications\": {\n    \"originallyPublished\": \"ex aliquip\",\n    \"author\": \"et occaecat\",\n    \"pageCount\": 52263647,\n    \"illustrator\": {},\n    \"genres\": {}\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Book?order=cupidatat magna quis ipsum",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Book"
+									],
+									"query": [
+										{
+											"key": "order",
+											"value": "cupidatat magna quis ipsum"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"type\": \"sunt nisi Ut elit\",\n  \"title\": \"in enim Excepteur\",\n  \"status\": -31708390,\n  \"detail\": \"elit ut\",\n  \"instance\": \"elit\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Method Frete",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "text/plain"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/Book/Frete/100",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Book",
+								"Frete",
+								"100"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:5001",
+			"type": "string"
+		}
+	]
+}

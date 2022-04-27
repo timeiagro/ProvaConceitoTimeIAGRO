@@ -1,0 +1,16 @@
+
+#### PROJETO
+
+O projeto foi desenvolvido no .net 5, para funcionar precisa do mesmo estar instalado no ambiente.
+
+Também no projeto foi adicionado um arquivo com o nome "ProvaConceitoTimeIAGRO.postman_collection" que pode ser importado no aplicativo do Postman, nele já possui varios tipos de testes simulando algumas situações, apenas observer no Postman em body se o tipo esta como raw e o tipo do arquivo com json, já a url esta como padrão https://localhost:5001 no parametros do Postman
+
+
+Ao executar o projeto em modo debug, ele irá abrir o navegador com a pagina do swagger, nele também é possível realizar os testes.
+
+
+#### TESTES UNITÁRIOS
+
+Foi desenvolvido um projeto de testes unitário utilizando o NUnit. Estou testando todas as funções e Method simulando casos de sucesso e falha. Para o repositorio estou utilizando o Moq para mockar o mesmo e realizar testes simulando os valores.
+
+Para executar é só abrir ir no projeto ProvaConceitoTimeIAGRO.Test, ir na class UnitTest e nos testes clicar com o botão direito do mouse em cima do teste e depois executar e testar ou abrir o gerenciador de teste que fica no menu Teste e depois em Gerenciador de Teste.

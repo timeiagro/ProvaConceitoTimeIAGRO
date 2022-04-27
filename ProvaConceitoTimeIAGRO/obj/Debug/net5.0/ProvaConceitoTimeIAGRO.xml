@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProvaConceitoTimeIAGRO</name>
+    </assembly>
+    <members>
+        <member name="T:ProvaConceitoTimeIAGRO.Controllers.BookController">
+            <summary>
+            Book Controller
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Controllers.BookController.#ctor(ProvaConceitoTimeIAGRO.Interface.IGenericService{ProvaConceitoTimeIAGRO.Model.Book})">
+            <summary>
+            Construtor Book Controller
+            </summary>
+            <param name="genericService"></param>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Controllers.BookController.Frete(System.Double)">
+            <summary>
+            Method Frete
+            </summary>
+            <param name="valor">Double</param>
+            <example>
+            api/Book/Frete/111.3
+            </example>
+            <returns>resultado valor em double</returns>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Controllers.BookController.GetAll(ProvaConceitoTimeIAGRO.Model.Book,System.String)">
+             <summary>
+             Method Get All
+             </summary>
+             <param name="item">Model Book</param>
+             <param name="order" value="asc">string</param>
+              <remarks> 
+             <para>
+             Example1: { }
+             </para>
+             <para>
+             Example2: { "id": 2}
+             </para>
+             <para>
+             Example3: { "name": "Journey" }
+             </para>
+             <para>
+             Example4: { "price": 10 }
+             </para>
+             <para>
+             Example5: { "specifications": { "originallyPublished": null } }
+             </para>
+             <para>
+             Example6: { "specifications": { "author": "Jules Verne" } }
+             </para>
+             <para>
+              Example7: { "specifications": { "pageCount": 183 } }
+             </para>
+             <para>
+              Example8: { "specifications": { "illustrator": "Édouard Riou" } }
+             </para>
+             <para>
+              Example9: { "specifications": { "genres": "Adventure" } }
+             </para>
+              </remarks> 
+              
+             <example>After class initialisation, call this method:
+             <code>
+             { "id": 2}
+             </code>
+             </example>
+             <remarks>
+             Sample request:
+            
+                 POST  
+                 {
+                 }
+            
+             </remarks>
+             <returns>resultado list book</returns>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Controllers.BookController.Dispose">
+            <summary>
+            Method Dispose
+            </summary>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Exceptions.ExceptionsMessage">
+            <summary>
+            Exceptions Message
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Exceptions.ExceptionsMessage.#ctor">
+            <summary>
+            Construtor Exceptions Message
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Exceptions.ExceptionsMessage.#ctor(System.String)">
+            <summary>
+            Construtor Exception Message
+            </summary>
+            <param name="message">string</param>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Exceptions.ExceptionsMessage.#ctor(System.String,System.Exception)">
+            <summary>
+            Construtor Exception Message
+            </summary>
+            <param name="message">sring</param>
+            <param name="inner">Exception</param>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.ExtensionMethod.Extensions">
+            <summary>
+            Class Extension
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.ExtensionMethod.Extensions.IsNullValue(System.Object,System.String)">
+            <summary>
+            Method Extensão Is Null Or Empty
+            </summary>
+            <param name="obj">object</param>
+            <param name="parametro">string</param>
+            <returns>retorno bool</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Interface.IGenericService`1">
+            <summary>
+            Interface IGenericService T
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Interface.IGenericService`1.GetAll(`0,System.String)">
+            <summary>
+            Method Get All
+            </summary>
+            <param name="item">T</param>
+            <param name="order">string</param>
+            <returns>Resultado List T</returns>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Interface.IGenericService`1.Frete(System.Double)">
+            <summary>
+            Method Frete
+            </summary>
+            <param name="valor">double</param>
+            <returns>resultado double</returns>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Interface.IRepositorio">
+            <summary>
+            Interface IRepositorio
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Interface.IRepositorio.GetBook">
+            <summary>
+            Method GetBook
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Model.Book">
+            <summary>
+            Class Book
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Book.Id">
+            <summary>
+            Id
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Book.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Book.Price">
+            <summary>
+            Price
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Book.Specifications">
+            <summary>
+            Specifications
+            </summary>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Model.Specifications">
+            <summary>
+            Class Specifications
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Specifications.OriginallyPublished">
+            <summary>
+            Originallly Published
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Specifications.Author">
+            <summary>
+            Author
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Specifications.PageCount">
+            <summary>
+            Page Count
+            </summary>
+        </member>
+        <member name="F:ProvaConceitoTimeIAGRO.Model.Specifications._illustrator">
+            <summary>
+            _illustrator
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Specifications.Illustrator">
+            <summary>
+            Illustrator
+            </summary>
+        </member>
+        <member name="F:ProvaConceitoTimeIAGRO.Model.Specifications._genres">
+            <summary>
+            _genres
+            </summary>
+        </member>
+        <member name="P:ProvaConceitoTimeIAGRO.Model.Specifications.Genres">
+            <summary>
+            Genres
+            </summary>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Repository.Repositorio">
+            <summary>
+            Class Repositorio
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Repository.Repositorio.GetBook">
+            <summary>
+            Method Get Book
+            </summary>
+            <returns>Retorno List Book</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Servico.BookService">
+            <summary>
+            Class Book Service
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Servico.BookService.#ctor(ProvaConceitoTimeIAGRO.Interface.IRepositorio)">
+            <summary>
+            Construtor Book Service
+            </summary>
+            <param name="repositorio">IRepositorio</param>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Servico.BookService.Frete(System.Double)">
+            <summary>
+            Method Frete
+            </summary>
+            <param name="valor">double</param>
+            <returns>resultado em double</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Servico.BookService.GetAll(ProvaConceitoTimeIAGRO.Model.Book,System.String)">
+            <summary>
+            Method Get All
+            </summary>
+            <param name="item">Model Book</param>
+            <param name="order">string</param>
+            <returns>Resultado em List Book</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Servico.BookService.Dispose">
+            <summary>
+            Method Dispose
+            </summary>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Startup">
+            <summary>
+            Class Startup
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Construtor Startup
+            </summary>
+            <param name="configuration">IConfiguration</param>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure Services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Configure
+            </summary>
+            <param name="app">IApplicationBuilder</param>
+            <param name="env">IWebHostEnvironment</param>
+        </member>
+        <member name="T:ProvaConceitoTimeIAGRO.Utils.Util">
+            <summary>
+            Class Util
+            </summary>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Utils.Util.Existe(System.String[],System.String)">
+            <summary>
+            Method Existe
+            </summary>
+            <param name="param1">string[]</param>
+            <param name="param2">string</param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Utils.Util.ExisteGenres(System.Object,ProvaConceitoTimeIAGRO.Model.Book)">
+            <summary>
+            Method Existe Genres
+            </summary>
+            <param name="genres">dynamic</param>
+            <param name="book">Model Book</param>
+            <returns>Resultado em bool</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Utils.Util.ExisteIllustrator(System.Object,ProvaConceitoTimeIAGRO.Model.Book)">
+            <summary>
+            Method Existe Illustrator
+            </summary>
+            <param name="illustrator">dynamic</param>
+            <param name="book">Model Book</param>
+            <returns>Resultado em bool</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Utils.Util.Filtrar(System.Collections.Generic.List{ProvaConceitoTimeIAGRO.Model.Book},System.Object,System.Object)">
+            <summary>
+            Method Filtrar
+            </summary>
+            <param name="books">List Book</param>
+            <param name="genres">dynamic</param>
+            <param name="illustrator">dynamic</param>
+            <returns>resultado em List Book</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Utils.Util.IsNotDefault(ProvaConceitoTimeIAGRO.Model.Book)">
+            <summary>
+            Method Is Not Default
+            </summary>
+            <param name="book">Model Book</param>
+            <returns>Resultado em bool</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:ProvaConceitoTimeIAGRO.Utils.Util.GetValor(System.Object)">
+            <summary>
+            Method Get Valor
+            </summary>
+            <param name="parametro">dynamic</param>
+            <returns>Resultado string/string[]</returns>
+        </member>
+    </members>
+</doc>
